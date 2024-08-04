@@ -12,7 +12,6 @@ function FeaturedCourses() {
         slug: string
     }
 
-
   return (
     <div className='max_width_sc p-6 m-2'>
      <div className='p-4 pt-3'>

@@ -15,9 +15,9 @@ interface instr{
 
 
   return (
-    <>
+    <div className="flex flex-wrap gap-3 justify-center pt-[150px]">
     {
-        instruct.map((item:instr)=>(
+        instruct.map((item:instr,i)=>(
             <div key={item.id}>
         <CardContainer className="inter-var">
       <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
@@ -68,7 +68,7 @@ interface instr{
     </div>
         ))
     }
-    </>
+    </div>
   )
 }
 
