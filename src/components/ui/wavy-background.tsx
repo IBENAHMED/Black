@@ -47,18 +47,18 @@ export const WavyBackground = ({
   };
 
   const init = () => {
-    canvas = canvasRef.current;
-    ctx = canvas.getContext("2d");
-    w = ctx.canvas.width = window.innerWidth;
-    h = ctx.canvas.height = window.innerHeight;
-    ctx.filter = `blur(${blur}px)`;
-    nt = 0;
-    window.onresize = function () {
-      w = ctx.canvas.width = window.innerWidth;
-      h = ctx.canvas.height = window.innerHeight;
-      ctx.filter = `blur(${blur}px)`;
-    };
-    render();
+    // canvas = canvasRef.current;
+    // ctx = canvas.getContext("2d");
+    // w = ctx.canvas.width = window.innerWidth;
+    // h = ctx.canvas.height = window.innerHeight;
+    // ctx.filter = `blur(${blur}px)`;
+    // nt = 0;
+    // window.onresize = function () {
+    //   w = ctx.canvas.width = window.innerWidth;
+    //   h = ctx.canvas.height = window.innerHeight;
+    //   ctx.filter = `blur(${blur}px)`;
+    // };
+    // render();
   };
 
   const waveColors = colors ?? [
@@ -104,8 +104,8 @@ export const WavyBackground = ({
     // I'm sorry but i have got to support it on safari.
     setIsSafari(
       typeof window !== "undefined" &&
-        navigator.userAgent.includes("Safari") &&
-        !navigator.userAgent.includes("Chrome")
+      navigator.userAgent.includes("Safari") &&
+      !navigator.userAgent.includes("Chrome")
     );
   }, []);
 
@@ -116,14 +116,14 @@ export const WavyBackground = ({
         containerClassName
       )}
     >
-      <canvas
+      {/* <canvas
         className="absolute inset-0 z-0"
         ref={canvasRef}
         id="canvas"
         style={{
           ...(isSafari ? { filter: `blur(${blur}px)` } : {}),
         }}
-      ></canvas>
+      ></canvas> */}
       <div className={cn("relative z-10", className)} {...props}>
         {children}
       </div>
