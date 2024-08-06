@@ -42,25 +42,27 @@ let Index = () => {
     return (
         <group ref={mesh} >
             <primitive object={background.scene} />
-            <Html position={[-8.5, 3, 0]}>
-                <section style={{ width: "1300px" }}>
-                    <Hero />
-                </section>
-                <section style={{ width: "1300px" }}>
-                    <FeaturedCourses />
-                </section>
-                <section className="Up" style={{ width: "1300px" }}>
-                    <WhyChooseUs />
-                </section>
-                <section style={{ width: "1300px" }}>
-                    <TestimonialCard />
-                </section>
-                <section style={{ width: "1300px" }}>
-                    <UpcomingWebinar />
-                </section>
-                <section style={{ width: "1300px" }}>
-                    <Instructor />
-                </section>
+            <Html>
+                <div className="absolute left-0 top-0 -translate-x-1/2 -translate-y-60">
+                    <section style={{ width: "1300px" }}>
+                        <Hero />
+                    </section>
+                    <section style={{ width: "1300px" }}>
+                        <FeaturedCourses />
+                    </section>
+                    <section className="Up" style={{ width: "1300px" }}>
+                        <WhyChooseUs />
+                    </section>
+                    <section style={{ width: "1300px" }}>
+                        <TestimonialCard />
+                    </section>
+                    <section style={{ width: "1300px" }}>
+                        <UpcomingWebinar />
+                    </section>
+                    <section style={{ width: "1300px" }}>
+                        <Instructor />
+                    </section>
+                </div>
             </Html>
         </group >
     );
