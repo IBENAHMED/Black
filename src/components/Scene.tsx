@@ -21,48 +21,6 @@ let Index = () => {
     let { actions, names } = useAnimations(background.animations, background.scene);
     const scroll = useScroll();
 
-
-    // console.log(camera.position)
-    // const { cameraPosition, scenePosition, sceneRotation }: any = useControls({
-    //     cameraPosition: {
-    //         x: 4, y: 0, z: 0
-    //     },
-    //     scenePosition: {
-    //         x: -100, y: -150, z: 0
-    //     },
-    //     sceneRotation: {
-    //         x: 0, y: 0, z: 0
-    //     }
-    // });
-
-    // useFrame(() => {
-    //     camera.position.x = cameraPosition.x;
-    //     camera.position.y = cameraPosition.y;
-    //     camera.position.z = cameraPosition.z;
-
-    //     scene.position.x = scenePosition.x;
-    //     scene.position.y = scenePosition.y;
-    //     scene.position.z = scenePosition.z;
-
-    //     scene.rotation.x = sceneRotation.x;
-    //     scene.rotation.y = sceneRotation.y;
-    //     scene.rotation.z = sceneRotation.z;
-    // });
-
-    // useEffect(() => {
-    //     camera.position.x = 4;
-    //     camera.position.y = 0;
-    //     camera.position.z = 0;
-
-    //     scene.position.x = -100;
-    //     scene.position.y = -150;
-    //     scene.position.z = 0;
-
-    //     scene.rotation.x = 0;
-    //     scene.rotation.y = 0;
-    //     scene.rotation.z = 0;
-    // }, [])
-
     const mesh: any = useRef(null);
 
     useEffect(() => {
@@ -91,7 +49,7 @@ let Index = () => {
                 <section style={{ width: "1300px" }}>
                     <FeaturedCourses />
                 </section>
-                <section style={{ width: "1300px" }}>
+                <section className="Up" style={{ width: "1300px" }}>
                     <WhyChooseUs />
                 </section>
                 <section style={{ width: "1300px" }}>
@@ -111,17 +69,12 @@ let Index = () => {
 export default function Home() {
 
     return (
-        <main className="h-screen">
-            <div className="h-screen w-full fixed top-0 z-10 hidden lg:block">
-                <Canvas>
-                    <directionalLight position={[-5, -5, 5]} intensity={4} />
-                    <ambientLight />
-                    <ScrollControls damping={0.5} pages={6} >
-                        <Index />
-                    </ScrollControls>
-                </Canvas>
-            </div>
-        </main>
-
+        <Canvas>
+            <directionalLight position={[-5, -5, 5]} intensity={4} />
+            <ambientLight />
+            <ScrollControls damping={0.5} pages={5} >
+                <Index />
+            </ScrollControls>
+        </Canvas>
     );
 }

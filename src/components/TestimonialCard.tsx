@@ -41,7 +41,7 @@ function TestimonialCard() {
   return (
     <div className="h-[40rem] rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
 
-      <h2 className="text-center text-4xl font-bold pb-6">Hear Our Harmoni</h2>
+      <h2 className="text-center text-3xl md:text-5xl font-bold pb-6">Hear Our Harmoni</h2>
 
       <InfiniteMovingCards
         items={testimonials}

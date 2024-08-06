@@ -3,7 +3,7 @@
 import React from "react";
 import { StickyScroll } from "./ui/sticky-scroll-reveal";
 import Image from "next/image";
- 
+
 const content = [
   {
     title: "Collaborative Editing",
@@ -54,8 +54,8 @@ const content = [
 ];
 function WhyChooseUs() {
   return (
-   <div className="w-full max_width_sc">
-    
+    <div className="w-full max_width_sc">
+
       <StickyScroll content={content} />
     </div>
   )

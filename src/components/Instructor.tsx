@@ -38,7 +38,7 @@ function Instructor() {
   return (
     <div className='relative overflow-hidden flex justify-center items-center my-7'>
       <WavyBackground className="">
-        <div className="w-full flex justify-center flex-col gap-6 sm:m-4 px-2">
+        <div className="Footer flex justify-center flex-col gap-6 sm:m-4 px-2">
           <h2 className="text-4xl sm:text-5xl text-center font-bold">Meet Our Instructor</h2>
           <div className="flex justify-center flex-wrap pl-2"> <p className="sm:max-w-[500px] w-full p-2 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea sed ullam accusantium natus a error adipisci dignissimos nostrum non doloremque, quidem perferendis, atque provident tenetur. Aperiam aliquid est facilis delectus.</p></div>
         </div>
