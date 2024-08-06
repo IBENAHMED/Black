@@ -3,7 +3,7 @@ import { Spotlight } from "./ui/Spotlight";
 import { Button } from "@/components/ui/moving-border";
 function Hero() {
   return (
-    <div className="max_width_sc flex justify-center items-end py-6 w-full h-[520px] m-4">
+    <div className="HeroHeight max_width_sc flex justify-center items-end py-6 w-full h-[750px] m-4">
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="white"
